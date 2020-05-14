@@ -1,6 +1,6 @@
 {
-  "name": "react-bootstrap",
-  "version": "1.0.1",
+  "name": "reply-bitmama/react-bootstrap",
+  "version": "1.0.1.1",
   "description": "Bootstrap 4 components built with React - fixed ie 10",
   "homepage": "https://react-bootstrap.github.io/",
   "sideEffects": false,
