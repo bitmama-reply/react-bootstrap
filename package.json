@@ -1,10 +1,10 @@
 {
   "name": "react-bootstrap",
   "version": "1.0.1",
-  "description": "Bootstrap 4 components built with React",
+  "description": "Bootstrap 4 components built with React - fixed ie 10",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-bootstrap/react-bootstrap.git"
+    "url": "git+https://github.com/bitmama-reply/react-bootstrap.git#master"
   },
   "homepage": "https://react-bootstrap.github.io/",
   "sideEffects": false,
@@ -58,8 +58,5 @@
   },
   "release": {
     "conventionalCommits": true
-  },
-  "bugs": {
-    "url": "https://github.com/react-bootstrap/react-bootstrap/issues"
   }
 }
