@@ -22,21 +22,25 @@ var BootstrapModalManager = /*#__PURE__*/function (_ModalManager) {
     _this = _ModalManager.call.apply(_ModalManager, [this].concat(args)) || this;
 
     _this.adjustAndStore = function (prop, element, adjust) {
+      if(element && element.dataset) {
       var _css;
 
       var actual = element.style[prop];
       element.dataset[prop] = actual;
       css(element, (_css = {}, _css[prop] = parseFloat(css(element, prop)) + adjust + "px", _css));
+      }
     };
 
     _this.restore = function (prop, element) {
-      var value = element.dataset[prop];
+      if(element && element.dataset) {
+        var value = element.dataset[prop];
 
-      if (value !== undefined) {
-        var _css2;
+        if (value !== undefined) {
+          var _css2;
 
-        delete element.dataset[prop];
-        css(element, (_css2 = {}, _css2[prop] = value, _css2));
+          delete element.dataset[prop];
+          css(element, (_css2 = {}, _css2[prop] = value, _css2));
+        }
       }
     };
 
